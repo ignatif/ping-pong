@@ -1,14 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import PingPongTable from './PingPongTable/PingPongTable.js';
+import Logo from './Logo/Logo';
+import PingPongTable from './PingPongTable/PingPongTable';
 
 function App() {
   return (
     <div className="App">
-      <p className="logo">
-        乒乓
-      </p>
+      <Logo />
       <PingPongTable />
     </div>
   );

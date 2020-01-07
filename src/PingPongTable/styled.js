@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const tableLongitudeRatio = 9;
-const tableWidthRatio = 4;
-
-const purple = '#7178C4';
-const green = '#9DED7A';
-
-const borderRadius = 5;
-const borderWidth = 4;
+import {
+  tableLongitudeRatio,
+  tableWidthRatio,
+  purple,
+  green,
+  borderRadius,
+  borderWidth,
+} from '../constants/constants';
 
 export const Table = styled.div`
   background-color: ${purple};
@@ -16,6 +16,7 @@ export const Table = styled.div`
   border-radius: ${borderRadius}px;
   position: relative;
 `;
+
 export const LeftHalf = styled.div`
   background-color: ${green};
   width: ${(tableLongitudeRatio * 70 / 2) - (borderWidth / 2)}px;
@@ -24,6 +25,7 @@ export const LeftHalf = styled.div`
   border: ${borderWidth}px solid ${purple};
   box-sizing: border-box;
 `;
+
 export const Ball = styled.div`
   border-radius: 100%;
   background-color: ${purple};
@@ -34,6 +36,7 @@ export const Ball = styled.div`
   top: 140px;
   left: 80px;
 `;
+
 export const Player = styled.div`
   border-radius: 100%;
   width: 60px;
